@@ -1,5 +1,6 @@
 package org.madbunny.twab;
 
+import org.madbunny.twab.objects.plume.Plume;
 import org.madbunny.vsrat2d.api.ApplicationContext;
 import org.madbunny.vsrat2d.api.Color;
 import org.madbunny.vsrat2d.api.FrameContext;
@@ -13,6 +14,8 @@ public class GameCore {
     private final int windowHeight;
     private int mainFontId;
 
+    private Plume plume;
+
     public GameCore(int windowWidth, int windowHeight) {
         this.windowWidth = windowWidth;
         this.windowHeight = windowHeight;
@@ -20,10 +23,16 @@ public class GameCore {
 
     public void initialize(ApplicationContext ctx) {
         mainFontId = ctx.fonts().createFont("fonts/comic-sans-ms.ttf", 24);
+        plume = new Plume(1000, 20, 10, new Color(0.6f, 0.3f, 0.1f), 1f);
     }
 
     public void update(FrameContext ctx) {
+        plume.Update(ctx);
+
+
+
         ctx.screen().clear(BACKGROUND_COLOR);
         ctx.screen().drawText(mainFontId, new Point2D(windowWidth * 0.5f, windowHeight * 0.5f), TEXT_COLOR, "Hello!!1");
+        plume.Draw(ctx.screen());
     }
 }
