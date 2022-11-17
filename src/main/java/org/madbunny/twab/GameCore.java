@@ -19,7 +19,7 @@ public class GameCore {
     }
 
     public void initialize(ApplicationContext ctx) {
-        mainFontId = ctx.fonts().createFont("arial.ttf", 24);
+        mainFontId = ctx.fonts().createFont("fonts/comic-sans-ms.ttf", 24);
     }
 
     public void update(FrameContext ctx) {

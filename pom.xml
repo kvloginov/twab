@@ -23,7 +23,7 @@
         <maven.plugin.compiler.version>3.8.1</maven.plugin.compiler.version>
         <shade.version>3.2.4</shade.version>
         <junit.version>5.9.0</junit.version>
-        <vsrat2d.version>version-1.2.1</vsrat2d.version>
+        <vsrat2d.version>version-1.2.2</vsrat2d.version>
     </properties>
 
     <dependencies>
