@@ -1,15 +1,17 @@
-package org.madbunny.twab.objects.plume;
+package org.madbunny.twab.objects.animated;
 
+import org.madbunny.twab.objects.Entity;
 import org.madbunny.vsrat2d.api.*;
 
-public class PlumeUnit {
+public class DisappearingCircle implements Entity {
+
     private final Point2D center;
     private float radius;
     private final float endRadius;
     private Color color;
     private final boolean active;
 
-    public PlumeUnit(Point2D center, float startRadius, float endRadius, Color startColor, boolean active) {
+    public DisappearingCircle(Point2D center, float startRadius, float endRadius, Color startColor, boolean active) {
         this.center = center;
         this.radius = startRadius;
         this.endRadius = endRadius;

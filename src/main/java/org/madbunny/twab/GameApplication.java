@@ -3,8 +3,8 @@ package org.madbunny.twab;
 import org.madbunny.vsrat2d.api.*;
 
 public class GameApplication {
-    private static final int WINDOW_WIDTH = 800;
-    private static final int WINDOW_HEIGHT = 600;
+    private static final int WINDOW_WIDTH = 1600;
+    private static final int WINDOW_HEIGHT = 900;
     private static final String WINDOW_TITLE = "Tomorrow will always be";
 
     public static void main(String[] args) {
